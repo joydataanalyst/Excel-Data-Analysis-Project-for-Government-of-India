@@ -1,0 +1,8 @@
+Certainly! Here are some Excel formulas that you might have used for analyzing the dataset:
+Total Population by State: =SUMIF(B2:B501, "MAHARASHTRA", E2:E501)[=SUMIF(state_range, state_name, population_range)]
+Average Literacy Rate by State: =AVERAGEIF(B2:B501, "MAHARASHTRA", K2:K501)[=AVERAGEIF(state_range, state_name, literacy_rate_range)]
+Top 10 Cities with Highest Literacy Rate:=LARGE(K2:K501, 1)[=LARGE(literacy_rate_range, n)]
+Average Sex Ratio by State:=AVERAGEIF(state_range, state_name, sex_ratio_range)[=AVERAGEIF(B2:B501, "MAHARASHTRA", J2:J501)]
+Percentage of Graduates in Total Population by State:=SUMIF(state_range, state_name, graduates_range) / SUMIF(state_range, state_name, population_range)
+[=SUMIF(B2:B501, "MAHARASHTRA", N2:N501) / SUMIF(B2:B501, "MAHARASHTRA", E2:E501)]
+Number of Cities in Each State:=COUNTIF(state_range, state_name)[=COUNTIF(B2:B501, "MAHARASHTRA")]
